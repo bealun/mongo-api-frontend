@@ -1,36 +1,13 @@
-// import React from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-
-// export const Test = () => {
-//   return (
-    // <BrowserRouter>
-    //   <Switch>
-
-    //     <Route path="/" exact>
-    //       <FirstPage />
-    //     </Route>
-
-    //     // The salty
-    //     <Route path="/salty">
-    //       <DetailsInfo />
-    //     </Route>
-
-    //     <Route path="/salty/:id">
-    //       <FoodItem />
-    //     </Route>
-
-
-    //     // The sweet
-    //     <Route path="/sweet">
-    //       <Sweet />
-    //     </Route>
-
-    //     <Route path="/sweet/:id">
-    //       <DessertItem />
-    //     </Route>
-
-    //   </Switch>
-    // </BrowserRouter>
-
-//   )
-// }
+export const Sweet = () => {
+  return (
+    <div>
+      <Link to='/'>
+        Go Back
+      </Link>
+      <p>Oh it's me again</p>
+    </div>
+  )
+}

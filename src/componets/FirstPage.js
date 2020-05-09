@@ -9,6 +9,10 @@ export const FirstPage = () => {
       <Link to={'/salty'} >
         <p>Testing again</p>
       </Link>
+
+      <Link to={'/sweet'} >
+        <p>Sweet test</p>
+      </Link>
     </div>
 
   )

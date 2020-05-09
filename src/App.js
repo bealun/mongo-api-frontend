@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { FirstPage } from './componets/FirstPage'
 import { Salty } from './componets/Salty'
+import { Sweet } from 'componets/Sweet';
 
 export const App = () => {
   return (
@@ -18,6 +19,10 @@ export const App = () => {
 
         <Route path="/salty">
           <Salty />
+        </Route>
+
+        <Route path="/sweet">
+          <Sweet />
         </Route>
 
 
