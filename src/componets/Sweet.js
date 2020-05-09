@@ -1,31 +1,8 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { FirstPage } from './componets/FirstPage'
-import { Salty } from './componets/Salty'
-
-export const App = () => {
-  return (
-    // <main>
-    //   <FirstPage />
-    // </main>
-    <BrowserRouter>
-      <Switch>
-
-        <Route path="/" exact>
-          <FirstPage />
-        </Route>
+// import React from 'react'
 
 
-        <Route path="/salty">
-          <Salty />
-        </Route>
-
-
-      </Switch>
-    </BrowserRouter>
-  )
-}
-
+// export const Test = () => {
+//   return (
     // <BrowserRouter>
     //   <Switch>
 
@@ -55,3 +32,5 @@ export const App = () => {
     //   </Switch>
     // </BrowserRouter>
 
+//   )
+// }
