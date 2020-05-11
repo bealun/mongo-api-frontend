@@ -22,11 +22,13 @@ export const Salty = () => {
         <span>Go Back</span>
       </Link>
       
-      <div class="contentWrapper">
+      <div className="contentWrapper">
       {saltItems.map(item => (
-        <div className="eachFood" key={item.id}>
+        <div className="eachFood" key={item.typeOf}>
+          <Link to={`/salty/${item._id}`} >
           <img src={item.img_url} alt='foods' />
           <h4>{item.name}</h4>
+          </Link>
         </div>
       ))}
       </div>

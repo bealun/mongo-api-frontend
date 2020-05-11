@@ -47,7 +47,8 @@ html,
   border-radius: 50%;
   color: white;
   border: 5px solid rgb(49, 49, 104);
-  transition: 0.4s ease-in-out;
+  background: rgb(49, 49, 104);
+  transition: 0.5s ease-in-out;
 }
 
 .saltyPage:hover {
@@ -71,7 +72,8 @@ html,
   border-radius: 50%;
   color: rgb(255, 233, 253);
   border: 5px solid rgb(184, 104, 157);
-  transition: 0.4s ease-in-out;
+  background: rgb(184, 104, 157);
+  transition: 0.5s ease-in-out;
 }
 
 .sweetPage:hover {

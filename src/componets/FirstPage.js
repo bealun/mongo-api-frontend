@@ -6,7 +6,6 @@ import './style/FirstPage.css'
 export const FirstPage = () => {
   return (
     <div className='firstPage'>
-      {/* <h1>Test</h1> */}
       <Link className='saltyPage' to={'/salty'} >
         <p>Salty test</p>
       </Link>

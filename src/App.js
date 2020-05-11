@@ -3,12 +3,11 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { FirstPage } from './componets/FirstPage'
 import { Salty } from './componets/Salty'
 import { Sweet } from 'componets/Sweet';
+import { SweetItem } from './componets/SweetItem'
+import { ItemSalty } from './componets/ItemSalty'
 
 export const App = () => {
   return (
-    // <main>
-    //   <FirstPage />
-    // </main>
     <BrowserRouter>
       <Switch>
 
@@ -17,12 +16,20 @@ export const App = () => {
         </Route>
 
 
-        <Route path="/salty">
+        <Route path="/salty" exact>
           <Salty />
         </Route>
 
-        <Route path="/sweet">
+        <Route path="/salty/:id" exact>
+          <ItemSalty />
+        </Route>
+
+        <Route path="/sweet" exact>
           <Sweet />
+        </Route>
+
+        <Route path="/sweet/:id" exact>
+          <SweetItem />
         </Route>
 
 

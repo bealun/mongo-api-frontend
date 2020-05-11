@@ -31,9 +31,11 @@
 }
 
 h4 {
+  width: 80%;
   position: absolute;
   text-align: center;
   top: 30%;
+  left: 10%;
   color: rgb(243, 235, 235);
   font-size: 32px;
   display: none;
