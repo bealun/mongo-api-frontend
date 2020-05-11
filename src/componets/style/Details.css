@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+
+.detailWrapper {
+  font-family: 'DM Mono', monospace;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+} 
+
+#root,
+.contentDetail {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(80%);
+  position: relative;
+}
+
+.moreAbout {
+  position: absolute;
+  color: white;
+  top: 20%;
+  left: 10%;
+  text-shadow: 4px 4px 8px black;
+  background-color: rgba(146, 144, 144, 0.466);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 60px;
+}
