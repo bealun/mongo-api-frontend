@@ -11,16 +11,6 @@
   align-items: center;
 }
 
-/* a {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: 20px 0px;
-  position: relative;
-  transition: all .5s ease-in-out;
-  z-index: 0;
-} */
-
 .eachFood {
   display: flex;
   justify-content: center;

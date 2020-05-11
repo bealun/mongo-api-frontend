@@ -53,3 +53,29 @@ h4 {
 h4:hover .eachFood img {
   filter: brightness(30%);
 }
+
+@media (max-width: 1024px) {
+  .contentWrapper {
+    max-width: 100%;
+  }
+
+  .eachFood img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 670px) {
+  .contentWrapper {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .eachFood {
+    width: 90%;
+  }
+
+  .eachFood img {
+    width: 100%;
+  }
+}
