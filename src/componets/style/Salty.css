@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+.loadingState {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
 .eachFood {
   display: flex;
   justify-content: center;

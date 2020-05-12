@@ -1,17 +1,27 @@
 import React, { useState, useEffect } from 'react'
+import { ClockLoader } from 'react-spinners'
 import { Link } from 'react-router-dom'
 
 export const Sweet = () => {
   const [sweetThings, setSweetThings] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    setLoading(true)
     fetch(`https://bealun-mongo-api.herokuapp.com/dessert`)
       .then(res => res.json())
       .then(json => {
         console.log('Items:', json)
         setSweetThings(json)
+        setLoading(false)
       })
   }, [])
+
+  if (loading) {
+    return <div className="loadingState">
+        <ClockLoader color="darkolivegreen" size="80px"/>
+      </div>
+  }
 
   return (
     <section>

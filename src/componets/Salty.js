@@ -1,19 +1,29 @@
 import React, { useState, useEffect } from 'react'
+import { ClockLoader } from 'react-spinners'
 import { Link } from 'react-router-dom'
 
 import './style/Salty.css'
 
 export const Salty = () => {
   const [saltItems, setSaltItems] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    setLoading(true)
     fetch(`https://bealun-mongo-api.herokuapp.com/food`)
       .then(res => res.json())
       .then(json => {
         console.log('Items:', json)
         setSaltItems(json)
+        setLoading(false)
       })
   }, [])
+
+  if (loading) {
+    return <div className="loadingState">
+        <ClockLoader color="darkolivegreen" size="80px"/>
+      </div>
+  }
 
   return (
     <section>
