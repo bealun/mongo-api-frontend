@@ -29,6 +29,11 @@ export const ItemSalty = () => {
           <h3>{salty.typeOf}</h3>
           <p>Time: {salty.time} minutes</p>
           <p>{salty.ingredients} ingredients</p>
+          <a href={salty.recipe} target='_blank'>
+            <button class="recipeLink">
+              Read More
+            </button>
+          </a>
         </div>
       </div>
     </div>
