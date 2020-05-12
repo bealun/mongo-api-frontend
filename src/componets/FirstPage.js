@@ -7,11 +7,11 @@ export const FirstPage = () => {
   return (
     <div className='firstPage'>
       <Link className='saltyPage' to={'/salty'} >
-        <p>Salty test</p>
+        <p>Salty</p>
       </Link>
 
       <Link className='sweetPage' to={'/sweet'} >
-        <p>Sweet test</p>
+        <p>Sweet</p>
       </Link>
     </div>
 
