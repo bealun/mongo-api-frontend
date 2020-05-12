@@ -29,6 +29,11 @@ export const SweetItem = () => {
           <h3>{sweet.typeOf}</h3>
           <p>Time: {sweet.time} minutes</p>
           <p>{sweet.ingredients} ingredients</p>
+          <a href={sweet.recipe} target='_blank'>
+            <button class="recipeLink">
+              Read More
+            </button>
+          </a>
         </div>
       </div>
     </div>
